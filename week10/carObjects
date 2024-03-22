@@ -1,0 +1,15 @@
+open class Vehicle(
+    val make: String,
+    val model: String,
+    val year: Int
+)
+
+fun main() {
+    // Creating a new vehicle
+    val myCar = Vehicle("Toyota", "Camry", 2022)
+
+    // Accessing and printing properties
+    println("Make: ${myCar.make}")
+    println("Model: ${myCar.model}")
+    println("Year: ${myCar.year}")
+}
