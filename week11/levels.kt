@@ -1,15 +1,11 @@
-fun main() {
-    println("Enter the pyramid level desired:")
-    val level = readLine()?.toIntOrNull()
+fun main () {
+    println("How many levels do you want for your pyramid?")
+    val level = readln()!!.toInt()
 
-    if (level != null && level > 0) {
-        for (i in 1..level) {
-            for (j in 1..i) {
-                print("*")
-            }
-            println()
+    for (i in 1..level){
+        for(j in 1..i){
+            print("*")
         }
-    } else {
-        println("Invalid input. Please enter a positive integer.")
+        println()
     }
 }
